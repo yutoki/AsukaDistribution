@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "sourceMap": true,
+        "target": "ES5", // TSはECMAScript 5に変換
+        // "module": "commonjs", // TSのモジュールはES Modulesとして出力
+        "outDir": "./dist/script",
+        "rootDir": "./src",
+        "strict": true,
+        "moduleResolution": "node",
+        "resolveJsonModule": true
+    }
+}
