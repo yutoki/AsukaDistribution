@@ -1,3 +1,8 @@
+body {
+    background-color: #F4F5F7;
+    margin: 0;
+}
+
 td {
     font-size: 12px;
     font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
@@ -43,6 +48,10 @@ table tr {
     background-color: rgb(255, 131, 131);
 }
 
+.impMonster {
+    font-weight: bold;
+}
+
 td div {
     display: none;
 }
@@ -53,4 +62,39 @@ td div {
 [value="Defence"]:checked~.main div[data-category~="Defence"],
 [value="Special"]:checked~.main div[data-category~="Special"] {
     display: block;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    height: 30px;
+    background: rgba(0, 0, 0, .8);
+}
+
+/*  ラジオボタンを非表示に */
+input[type="checkbox"] {
+    position: absolute;
+    left: -9999px;
+}
+
+label {
+    text-align: center;
+    margin: 1em;
+    line-height: normal;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.363);
+    vertical-align: middle;
+}
+
+label:hover {
+    color: #fff;
+}
+
+[value="Rate"]:checked~header label[for="Rate"],
+[value="Hp"]:checked~header label[for="Hp"],
+[value="Attack"]:checked~header label[for="Attack"],
+[value="Defence"]:checked~header label[for="Defence"],
+[value="Special"]:checked~header label[for="Special"] {
+    color: #fff;
 }
