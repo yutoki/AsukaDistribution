@@ -64,16 +64,22 @@ td div {
     display: block;
 }
 
+[value="Front"]:checked~.main:not([data-category~="Front"]),
+[value="Back"]:checked~.main:not([data-category~="Back"]) {
+    display: none;
+}
+
 header {
     position: sticky;
     top: 0;
     z-index: 10;
-    height: 30px;
+    height: 55px;
     background: rgba(0, 0, 0, .8);
 }
 
 /*  ラジオボタンを非表示に */
-input[type="checkbox"] {
+input[type="checkbox"],
+input[type="radio"] {
     position: absolute;
     left: -9999px;
 }
@@ -88,13 +94,23 @@ label {
 }
 
 label:hover {
-    color: #fff;
+    color: rgb(190, 190, 190);
 }
 
 [value="Rate"]:checked~header label[for="Rate"],
 [value="Hp"]:checked~header label[for="Hp"],
 [value="Attack"]:checked~header label[for="Attack"],
 [value="Defence"]:checked~header label[for="Defence"],
-[value="Special"]:checked~header label[for="Special"] {
+[value="Special"]:checked~header label[for="Special"],
+[value="Front"]:checked~header label[for="Front"],
+[value="Back"]:checked~header label[for="Back"] {
     color: #fff;
+}
+
+ul {
+    margin: 0;
+}
+
+li {
+    list-style: none;
 }
