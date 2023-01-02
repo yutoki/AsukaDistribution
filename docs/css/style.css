@@ -52,7 +52,8 @@ table tr {
     font-weight: bold;
 }
 
-td div {
+td div,
+.Ndoba {
     display: none;
 }
 
@@ -60,7 +61,8 @@ td div {
 [value="Hp"]:checked~.main div[data-category~="Hp"],
 [value="Attack"]:checked~.main div[data-category~="Attack"],
 [value="Defence"]:checked~.main div[data-category~="Defence"],
-[value="Special"]:checked~.main div[data-category~="Special"] {
+[value="Special"]:checked~.main div[data-category~="Special"],
+[value="Ndoba"]:checked~.main .Ndoba {
     display: block;
 }
 
@@ -102,6 +104,7 @@ label:hover {
 [value="Attack"]:checked~header label[for="Attack"],
 [value="Defence"]:checked~header label[for="Defence"],
 [value="Special"]:checked~header label[for="Special"],
+[value="Ndoba"]:checked~header label[for="Ndoba"],
 [value="Front"]:checked~header label[for="Front"],
 [value="Back"]:checked~header label[for="Back"] {
     color: #fff;
