@@ -53,7 +53,7 @@ table tr {
 }
 
 td div,
-.Ndoba {
+.main td:nth-last-child(1) {
     display: none;
 }
 
@@ -62,7 +62,7 @@ td div,
 [value="Attack"]:checked~.main div[data-category~="Attack"],
 [value="Defence"]:checked~.main div[data-category~="Defence"],
 [value="Special"]:checked~.main div[data-category~="Special"],
-[value="Ndoba"]:checked~.main .Ndoba {
+[value="Ndoba"]:checked~.main td:nth-last-child(1) {
     display: block;
 }
 
