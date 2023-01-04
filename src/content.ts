@@ -27,7 +27,9 @@ function valueSet(tbCell: HTMLTableCellElement, monsterParameter: IParameter) {
     tbCell.appendChild(setAttribute('data-category', 'Hp', 'HP:' + monsterParameter.hp))
     tbCell.appendChild(setAttribute('data-category', 'Attack', 'Atk:' + monsterParameter.attack))
     tbCell.appendChild(setAttribute('data-category', 'Defence', 'Def:' + monsterParameter.defence))
-    tbCell.appendChild(setAttribute('data-category', 'Special', '特技率:' + monsterParameter.special))
+    if (monsterParameter.special != 0) {
+        tbCell.appendChild(setAttribute('data-category', 'Special', '特技率:' + monsterParameter.special))
+    }
 }
 
 function setAttribute(attrName: string, attrValue: string, textValue: string): HTMLDivElement {
