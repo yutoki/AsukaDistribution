@@ -3,7 +3,7 @@
         "hp": 300,
         "attack": 130,
         "defence": 30,
-        "special": 25,
+        "special": 13,
         "exp": 9999
     },
     "アースニードル": {
@@ -402,7 +402,7 @@
         "hp": 100,
         "attack": 50,
         "defence": 20,
-        "special": 25,
+        "special": 19,
         "exp": 1200
     },
     "スカルドラゴン": {
