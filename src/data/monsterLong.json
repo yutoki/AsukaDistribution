@@ -1,0 +1,82 @@
+{
+    "馬武者": {
+        "hp": 40,
+        "attack": 16,
+        "defence": 12,
+        "longSpecial": 50,
+        "special": 25,
+        "exp": 42
+    },
+    "荒馬ザムライ": {
+        "hp": 65,
+        "attack": 27,
+        "defence": 12,
+        "longSpecial": 50,
+        "special": 25,
+        "exp": 110
+    },
+    "あばれ馬将軍": {
+        "hp": 68,
+        "attack": 25,
+        "defence": 15,
+        "longSpecial": 50,
+        "special": 25,
+        "exp": 165
+    },
+    "乱れ馬王": {
+        "hp": 200,
+        "attack": 45,
+        "defence": 12,
+        "longSpecial": 50,
+        "special": 25,
+        "exp": 3100
+    },
+    "バットカンガルー": {
+        "hp": 62,
+        "attack": 24,
+        "defence": 10,
+        "longSpecial": 50,
+        "special": 20,
+        "exp": 80
+    },
+    "エビルカンガルー": {
+        "hp": 95,
+        "attack": 32,
+        "defence": 13,
+        "longSpecial": 50,
+        "special": 20,
+        "exp": 250
+    },
+    "デビルカンガルー": {
+        "hp": 105,
+        "attack": 37,
+        "defence": 15,
+        "longSpecial": 50,
+        "special": 20,
+        "exp": 800
+    },
+    "パ王": {
+        "hp": 55,
+        "attack": 20,
+        "defence": 12,
+        "longSpecial": 20,
+        "special": 50,
+        "exp": 47
+    },
+    "パオパ王": {
+        "hp": 108,
+        "attack": 32,
+        "defence": 5,
+        "longSpecial": 20,
+        "special": 50,
+        "exp": 155
+    },
+    "パオパ王ーン": {
+        "hp": 130,
+        "attack": 48,
+        "defence": 18,
+        "longSpecial": 20,
+        "special": 50,
+        "exp": 3500
+    }
+}
