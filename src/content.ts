@@ -36,6 +36,9 @@ function init() {
             valueSetLong(elem, valMonster)
         }
     });
+
+    var searchElem = document.getElementById('searchword')
+    searchElem?.addEventListener('keyup', searchWord)
 }
 
 function valueSet(tbCell: HTMLTableCellElement, monsterParameter: IParameter) {
@@ -62,4 +65,28 @@ function setAttribute(attrName: string, attrValue: string, textValue: string): H
     celldata.setAttribute(attrName, attrValue)
     celldata.innerHTML = textValue
     return celldata
+}
+
+function searchWord() {
+    var trList = document.querySelectorAll('tr')
+    var searchbox: HTMLInputElement = <HTMLInputElement>document.getElementById('searchword')!
+    var word: string = searchbox.value
+
+    trList.forEach(trElem => {
+        let consensus: boolean = false
+
+        for (let cellcnt: number = 0; cellcnt < trElem.cells.length; cellcnt++) {
+            if (trElem.cells[cellcnt].textContent!.toUpperCase().indexOf(word) > -1) {
+                consensus = true
+                continue
+            }
+        }
+
+        if (!consensus) {
+            trElem.style.display = "none";
+        } else {
+            trElem.style.display = "";
+        }
+    });
+
 }
